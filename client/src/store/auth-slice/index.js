@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://localhost:5001/api/auth/register",
+      "https://forever-fa3p.onrender.com",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://localhost:5001/api/auth/login",
+      "https://forever-fa3p.onrender.com",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "http://localhost:5001/api/auth/logout",
+      "https://forever-fa3p.onrender.com",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "http://localhost:5001/api/auth/check-auth",
+      "https://forever-fa3p.onrender.com",
       {
         withCredentials: true,
         headers: {
